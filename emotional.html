@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="eng">
+    <meta name="viewport"
+    content="width=device-width, intial-scale=1.0">
+     <title> Phoneix:The Rebirth </title>
+ <style>
+* {
+    padding: 0;
+    margin: 0;
+    font-family: monospace;
+    }
+    body{
+        background-color: #94cbe8;
+    }
+ul {
+    list-style: none;
+    background: #22438c;
+}
+ul li {
+    display: inline-block;
+    position: relative;
+}
+ul li a {
+   
+    display: block;
+    padding: 20px 25px;
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+    font-size: 20px;
+   
+}
+ul li ul .dropdown li {
+    display: block;
+}
+ul li ul.dropdown {
+    width: 100%;
+    background: #22438c;
+    position: absolute;
+    z-index: 999;
+    display: none;
+}
+ul li a:hover {
+    background: #112c66;
+}
+ul li:hover ul.dropdown {
+    display: block;
+}
+#logo {
+ width:70px;
+ display: block;
+ padding: 10px 15px 10px 20px;
+ text-decoration: none;
+    align-items: center;
+    font-size: 20px;
+}
+
+
+
+        h1, h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .video-container {
+            display: flex;
+            justify-content: center;
+            width: 100%;
+            max-width: 600px;
+            margin-bottom: 20px;
+        }
+
+        .video-container iframe {
+            width: 100%;
+            height: 300px;
+            border: none;
+            border-radius: 8px;
+        }
+
+        .text-container {
+            max-width: 600px;
+            margin-bottom: 20px;
+        }
+
+        .container {
+            background:#e9a7c9;
+            color: #333;
+            padding: 15px 25px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            max-width: 600px;
+            width: 100%;
+            margin-bottom: 20px;
+        }
+
+        .container h2 {
+            color: #000509;
+            border-bottom: 2px solid #28a745;
+            padding-bottom: 10px;
+            margin-bottom: 15px;
+        }
+
+        .container p {
+            margin-bottom: 10px;
+            line-height: 1.6;
+        }
+
+        .quote-container {
+            background: #e9a7c9;
+            color: #555;
+            padding: 15px 25px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            max-width: 600px;
+            width: 100%;
+            margin-top: 20px;
+            text-align: center;
+            font-style: italic;
+        }
+#logo
+        {
+          width:70px;
+           display: block;
+          padding: 10px 15px 10px 20px;
+          text-decoration: none;
+          align-items: center;
+           font-size: 30px;
+}
+.help{
+    text-align:center;
+    align-items: center;
+    background: #c3eaea; 
+            color: #050000;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+}
+.c{
+    text-align:center;
+    align-items: center;
+    padding-left:30%;
+}
+.d{
+    text-align:center;
+    align-items: center;
+    padding-left:30%;
+}
+.e{
+    text-align:center;
+    align-items: center;
+    padding-left:30%;
+}
+.f{
+    text-align:center;
+    align-items: center;
+    padding-left:30%;
+}
+.g{
+    text-align:center;
+    align-items: center;
+    padding-left:30%;
+}
+.win {
+            background-color: #333;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+        .win a {
+            color: #ff7f50;
+            text-decoration: none;
+        }
+        .win a:hover {
+            text-decoration: underline;
+        }
+        .win .container {
+            display: flex;
+            justify-content: space-between;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        .win .container div {
+            flex: 1;
+            margin: 0 10px;
+        }
+        .win h3 {
+            border-bottom: 2px solid #ff7f50;
+            padding-bottom: 10px;
+            margin-bottom: 10px;
+        }
+        .win ul {
+            list-style: none;
+            padding: 0;
+        }
+        .win ul li {
+            margin-bottom: 10px;
+        }
+        .win ul li a {
+            color: #fff;
+        }
+        .win .social-media a {
+            display: inline-block;
+            margin-right: 10px;
+        }
+        .win .social-media a img {
+            width: 30px;
+            height: 30px;
+        }
+        .win .subscribe button {
+            background-color: #555;
+            border: none;
+            color: #fff;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+        .win .subscribe button:hover {
+            background-color: #ff7f50;
+        }
+        .win .copyright {
+            margin-top: 20px;
+            border-top: 1px solid #444;
+            padding-top: 10px;
+            font-size: 14px;
+        }
+ </style>   
+</head>
+<body>
+    <ul>
+   <li><img src="Screenshot 2024-07-18 150236.png" alt text="Logo" id="logo"></li>
+
+    <li>
+        <a href="aboutus.html">About Us</a> 
+    </li>
+    <li>
+        <a href="#">Get Involved</a>
+        <ul class="dropdown">
+            <li><a href="emotional.html">Support</a></li>
+            <li><a href="donate.html">Donate</a></li>
+        </ul>
+    </li>
+    <li><a href="home.html">Home</a></li>
+    <li>
+        <a href="#">News And Events</a>
+        <ul class="dropdown">
+            <li><a href="special.html">Special Dates</a></li>
+            <li><a href="govt.html">Government Schemes</a></li>
+            <li><a href="medical.html">Medical Support</a></li>
+        </ul>
+    </li>
+    <li>
+        <a href="contact.html">Contact</a>
+    </li> 
+    <li>
+        <a href="login.html" id="login">Login</a>
+    </li>
+
+    </ul>
+    <h1>Emotional Support</h1>
+    <div class="c">
+    <div class="video-container">
+        <iframe src="motive.mp4" allowfullscreen ></iframe>
+    </div>
+    </div>
+    
+<p><c>If not you, then who? If the place you thrive in does not give you comfort, value, peace, and mental strength, then it’s not where you are meant to be. Do not complain; instead, strive hard to change your destiny.
+
+    Prove others wrong, stay strong, and protect the upcoming youth of the nation. Your strength and resilience can shape a brighter future, inspiring the next generation to rise above and reach for their dreams.</p>
+</c></p>   </div>
+<div class="d">
+    <div class="container">
+        <h2>Problem Faced</h2>
+      <p></p>  In today's society, third-gender individuals, despite having legal recognition in several jurisdictions, continue to face inequities that hinder their growth and potential for excellence. Their hearts are filled with hope, only to see their beliefs shattered by the injustices they endure. These inequities primarily focus on employment, healthcare, education, and social acceptance. This document outlines the key challenges, their impact, and the urgency of addressing these issues. </p>    </div></div>
+    <div class="e">
+        <div class="container">
+        <h2>IF NOT YOU THEN WHO?!</h2>
+<p><c>We plan to create an online portal specifically focusing on the transgender community. Our goal is to provide educational resources starting from elementary education and continuing through advanced learning, ensuring they are supported throughout their educational journey. Additionally, we will integrate online work-from-home opportunities to provide employment options. We aim to support this community by interviewing them to understand their basic requirements and the difficulties they face. We will also motivate them by featuring well recognized and appreciated transgender individuals, thereby creating awareness and fostering social acceptance. </p>>    </div>
+   </div>
+   <div class="f">
+    <div class="quote-container">
+        <p>Lets Accept Them For Who They Are And Not for What We Want Them To Be!</p>    
+</div>
+</div>
+
+        <footer class="win">
+            <div class="container">
+                <div class="follow-us">
+                    <h3>Follow Us</h3>
+                    <p>Follow us on social media and stay connected!</p>
+                    <div class="social-media">
+                        <a href="https://www.facebook.com/index.php/"><img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt="Facebook"></a>
+                        <a href="https://www.instagram.com/"><img src="https://cdn-icons-png.flaticon.com/512/733/733558.png" alt="Instagram"></a>
+                        <a href="https://www.linkedin.com/homea"><img src="https://cdn-icons-png.flaticon.com/512/733/733561.png" alt="LinkedIn"></a>
+                    </div>
+                </div>
+                <div class="important-links">
+                    <h3>Important Links</h3>
+                    <ul>
+                        <li><a href="aboutus.html">About Us</a></li>
+                        <li><a href="contact.html">What We Do</a></li>
+                        <li><a href="emotional.html">Our Impact</a></li>
+                        <li><a href="donate.html">Ways to Give</a></li>
+                        <li><a href="special.html">Volunteer</a></li>
+                    </ul>
+                </div>
+                <div class="contact-us">
+                    <h3>Contact Us</h3>
+                    <p>Coco Park Street<br>India, 29776</p>
+                    <p>625192</p>
+                    <p><a href="Phoenix_Rebirth@example.com">Email Us</a></p>
+                </div>
+                <div class="subscribe">
+                    <h3>Subscribe</h3>
+                    <p>Click to subscribe to our newsletter.</p>
+                    <button>SUBSCRIBE</button>
+                </div>
+            </div>
+            <div class="copyright">
+                &copy; All Rights Reserved
+            </div>
+        </footer>
+</body>
+</html>

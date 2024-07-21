@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="eng">
+    <meta name="viewport"
+    content="width=device-width, intial-scale=1.0">
+<style>
+    * {
+    padding: 0;
+    margin: 0;
+    font-family: monospace;
+    }
+    body{
+        background-color: #94cbe8;
+    }
+    ul {
+    list-style: none;
+    background: #22438c;
+}
+ul li {
+    display: inline-block;
+    position: relative;
+}
+ul li a {
+   
+    display: block;
+    padding: 20px 25px;
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+    font-size: 20px;
+   
+}
+ul li ul .dropdown li {
+    display: block;
+}
+ul li ul.dropdown {
+    width: 100%;
+    background: #22438c;
+    position: absolute;
+    z-index: 999;
+    display: none;
+}
+ul li a:hover {
+    background: #112c66;
+}
+ul li:hover ul.dropdown {
+    display: block;
+}
+#logo {
+ width:70px;
+ display: block;
+ padding: 10px 15px 10px 20px;
+ text-decoration: none;
+    align-items: center;
+    font-size: 20px;
+}
+#login{
+    padding-left: 600px;
+}
+ .container {
+      max-width: 85%;
+      height: 100%; 
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 30px;
+      padding-top:20px;
+      padding-bottom: 50px;
+      background-color: rgb(112, 146, 213); /* Semi-transparent background */
+      border-radius: 10px;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+      text-align: center;
+    }
+    .cont {
+            width: 300%;
+            max-width: 1100px; /* Adjust width as needed */
+            margin: 10px;
+            text-align: left;
+           padding-top:0px;
+           padding-left: 10px;
+           padding-right: 10px;
+           padding-bottom: 10px;
+            background-color: rgba(211, 126, 173, 0.8);
+            border-radius: 20px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+           
+        }
+        .conta {
+            width: 300%;
+            max-width: 1100px; /* Adjust width as needed */
+            margin: 10px;
+            padding: 10px;
+            background-color: rgba(233, 115, 188, 0.8);
+            border-radius: 20px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+            text-align: right;
+           
+        
+        }
+.h{
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.t{
+    text-align:center;
+}
+.m{
+            text-align: center; 
+            padding-left:25%;
+            padding-right:20%;
+            flex: 1; /* Take up remaining space */
+            padding-top: 60px; /* Add padding for spacing */
+            font-size:20px;
+        }
+        .win {
+            background-color: #333;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+        .win a {
+            color: #ff7f50;
+            text-decoration: none;
+        }
+        .win a:hover {
+            text-decoration: underline;
+        }
+        .win .container {
+            display: flex;
+            justify-content: space-between;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        .win .container div {
+            flex: 1;
+            margin: 0 10px;
+        }
+        .win h3 {
+            border-bottom: 2px solid #ff7f50;
+            padding-bottom: 10px;
+            margin-bottom: 10px;
+        }
+        .win ul {
+            list-style: none;
+            padding: 0;
+        }
+        .win ul li {
+            margin-bottom: 10px;
+        }
+        .win ul li a {
+            color: #fff;
+        }
+        .win .social-media a {
+            display: inline-block;
+            margin-right: 10px;
+        }
+        .win .social-media a img {
+            width: 30px;
+            height: 30px;
+        }
+        .win .subscribe button {
+            background-color: #555;
+            border: none;
+            color: #fff;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+        .win .subscribe button:hover {
+            background-color: #ff7f50;
+        }
+        .win .copyright {
+            margin-top: 20px;
+            border-top: 1px solid #444;
+            padding-top: 10px;
+            font-size: 14px;
+        }
+</style>
+</head>
+<body>
+    <ul>
+        <li><img src="Screenshot 2024-07-18 150236.png" alt text="Logo" id="logo"></li>
+     
+         <li>
+             <a href="aboutus.html">About Us</a> 
+         </li>
+         <li>
+             <a href="#">Get Involved</a>
+             <ul class="dropdown">
+                 <li><a href="emotional.html">Support</a></li>
+                 <li><a href="donate.html">Donate</a></li>
+             </ul>
+         </li>
+       
+    <li><a href="home.html">Home</a></li>
+         <li>
+             <a href="#">News And Events</a>
+             <ul class="dropdown">
+                 <li><a href="special.html">Special Dates</a></li>
+                 <li><a href="govt.html">Government Schemes</a></li>
+                 <li><a href="medical.html">Medical Support</a></li>
+             </ul>
+         </li>
+         <li>
+             <a href="contact.html">Contact</a>
+         </li> 
+         <li>
+             <a href="login.html" id="logout">Logout</a>
+         </li>
+     
+         </ul>
+         <div class="h">
+         <h1 style="color: #333;"><b><c>Important Dates To Know!</c></b></h1>
+         </div>
+<div class="container" >
+    <div class="cont" >
+        <div class="t">
+            <h2><br><b>Transgender Day of Visibility (TDOV) </b></h2>
+            </div>
+            <div class="m">
+                <p>Observed on March 31st each year, TDOV celebrates the accomplishments and contributions of transgender people worldwide while raising awareness of the discrimination they face.</p>
+            </div>
+           
+        <img src="tdvoc.jpg" alt text="TDVOC" id="1" max width="15%">
+
+    </div>
+    <div class="conta" >
+        <div class="t">
+            <h2><br><b>Transgender Day of Remembrance (TDoR)</b> </h2>
+            </div>
+            <div class="m">
+                <p>Held annually on November 20th, TDoR memorializes transgender individuals who have been murdered as a result of transphobia and draws attention to the violence and prejudice faced by the transgender community.</p>
+            </div>
+           
+        <img src="TDOR-20202.png" alt text="TDVOC" id="2" max width="20%" padding-top:0px>
+
+    </div>
+    <div class="cont" >
+      <div class="t">
+            <h2><br><b>International Transgender Day of Visibility (ITDoV) </b> </h2>
+            </div>
+            <div class="m">
+                <p> A companion day to TDOV, ITDoV on March 31st focuses on celebrating and empowering transgender and gender non-conforming people globally.</p>
+            </div>
+           
+        <img src="TDOV_Activists_Website-Thumbnail_1200x720.avif" alt text="TDVOC" id="3" max width="20%" padding-top:0px>
+    </div>
+    <div class="conta" >
+        <div class="t">
+            <h2><br><b>Spirit Day </b> </h2>
+            </div>
+            <div class="m">
+                <p> Observed on the third Thursday in October, Spirit Day is a day of action to stand against bullying of LGBTQ+ youth, including those who are transgender..</p>
+            </div>
+           
+        <img src="th.jpeg" alt text="TDVOC" id="4" max width="10%" padding-top:0px>
+    </div>
+    <div class="cont" >
+        <div class="t">
+            <h2><br><b>National Coming Out Day  </b> </h2>
+            </div>
+            <div class="m">
+                <p>  Celebrated on October 11th, this day encourages LGBTQ+ individuals to come out and share their stories to promote visibility and acceptance.</p>
+            </div>
+           
+        <img src="th (1).jpeg" alt text="TDVOC" id="5" max width="20%" padding-top:0px>
+    </div>
+    <div class="conta" >
+        <div class="t">
+            <h2><br><b>Pride Month (June)</b> </h2>
+            </div>
+            <div class="m">
+                <p> While not exclusively for transgender individuals, Pride Month includes events and celebrations that highlight the diversity and achievements of LGBTQ+ communities, including transgender people.</p>
+            </div>
+           
+        <img src="1593444437.webp" alt text="TDVOC" id="6" max width="20%" padding-top:0px>
+    </div>
+    <div class="conta" >
+        <div class="t">
+            <h2><br><b>Transgender Awareness Week </b> </h2>
+            </div>
+            <div class="m">
+                <p> Occurring annually during the second week of November, this week includes events and educational activities to raise awareness about issues facing transgender people.</p>
+            </div>
+           
+        <img src="330px-International_LGBT_Pride_Day.png" alt text="TDVOC" id="6" max width="10%" padding-top:0px>
+    </div>
+    <div class="cont" >
+        <div class="t">
+            <h2><br><b>Transgender Day of Action </b> </h2>
+            </div>
+            <div class="m">
+                <p> Held in late June, this day emphasizes direct action and activism in support of transgender rights and visibility.</p>
+            </div>
+           
+        <img src="230331104112-transgender-flag-white-house-181022.webp" alt text="TDVOC" id="6" max width="20%" padding-top:0px>
+    
+    </div>
+</div>
+
+
+   
+<footer class="win">
+    <div class="container">
+        <div class="follow-us">
+            <h3>Follow Us</h3>
+            <p>Follow us on social media and stay connected!</p>
+            <div class="social-media">
+                <a href="https://www.facebook.com/index.php/"><img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt="Facebook"></a>
+                <a href="https://www.instagram.com/"><img src="https://cdn-icons-png.flaticon.com/512/733/733558.png" alt="Instagram"></a>
+                <a href="https://www.linkedin.com/homea"><img src="https://cdn-icons-png.flaticon.com/512/733/733561.png" alt="LinkedIn"></a>
+            </div>
+        </div>
+        <div class="important-links">
+            <h3>Important Links</h3>
+            <ul>
+                <li><a href="aboutus.html">About Us</a></li>
+                <li><a href="contact.html">What We Do</a></li>
+                <li><a href="emotional.html">Our Impact</a></li>
+                <li><a href="donate.html">Ways to Give</a></li>
+                <li><a href="special.html">Volunteer</a></li>
+            </ul>
+        </div>
+        <div class="contact-us">
+            <h3>Contact Us</h3>
+            <p>Coco Park Street<br>India, 29776</p>
+            <p>625192</p>
+            <p><a href="Phoenix_Rebirth@example.com">Email Us</a></p>
+        </div>
+        <div class="subscribe">
+            <h3>Subscribe</h3>
+            <p>Click to subscribe to our newsletter.</p>
+            <button>SUBSCRIBE</button>
+        </div>
+    </div>
+    <div class="copyright">
+        &copy; All Rights Reserved
+    </div>
+</footer>
+
+
+</body>

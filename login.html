@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login Page</title>
+  <style>
+    /* Enhanced styling for the login page */
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-image: url("1593444437.webp"); /* Mild rainbow color gradient */
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+    .container {
+      max-width: 400px;
+      height: 90vh; /* Set the container height to cover the full page */
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 30px;
+      padding-bottom: 50px;
+      background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent background */
+      border-radius: 10px;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+      text-align: center;
+    }
+    .logo {
+      max-width: 100px;
+      height: auto;
+      margin-bottom: 20px;
+    }
+    input[type="text"],
+    input[type="password"],
+    input[type="submit"] {
+      width: calc(100% - 24px); /* Adjust for padding */
+      padding: 14px;
+      margin-bottom: 20px;
+      border: none;
+      border-radius: 25px;
+      box-sizing: border-box;
+      background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent background */
+      color: #333;
+      font-size: 16px;
+    }
+    input[type="submit"] {
+      background-color: #4caf50;
+      color: white;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+    input[type="submit"]:hover {
+      background-color: #45a049;
+    }
+    .password-hint {
+      font-size: 14px;
+      color: #666;
+      margin-bottom: 20px;
+    }
+    .forgot-link {
+      text-align: right;
+      margin-top: 10px;
+      font-size: 14px;
+      color: #666;
+    }
+    .links {
+    text-align: center;
+}
+.or{
+  text-align: center;
+}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <img class="logo" src="Screenshot 2024-07-18 150236.png" alt="Logo"> 
+    <h2 style="color: #333;">Welcome Back!</h2>
+    <form id="loginForm" method="post" action="logout.html">
+      <input type="text" id="email" name="email" placeholder="Email/Username" required>
+      <input type="password" id="password" name="password" placeholder="Password" required>
+      <div class="password-hint">Password should contain minimum 7 characters, alphabets, numbers, and symbols.</div>
+      <input type="submit" value="Login">
+    </form>
+    <div class="forgot-link">
+      <a href="forgot_username_or_password.html" style="color: #666; text-decoration: none;">Forgot Username or Password?</a>
+    <p class="or">
+      <c>----------or----------</c>
+  </p>
+
+<div class="links">
+  <c>
+    <p>Don't have account yet?</p><br>
+    <form action="register.html" method="POST">
+        <button type="submit" name="signUp">Sign Up</button>
+        </form>
+    </c>
+</div>
+  </div>
+ </div>
+ <script>
+  document.getElementById('myForm').addEventListener('submit', function(event) {
+      let isValid = true;
+
+      // Username validation
+      const username = document.getElementById('username').value;
+      if (username === '' || username.length < 3) {
+          document.getElementById('usernameError').textContent = 'Username must be at least 3 characters long.';
+          isValid = false;
+      } else {
+          document.getElementById('usernameError').textContent = '';
+      }
+
+      // Email validation
+      const email = document.getElementById('email').value;
+      const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+      if (!emailPattern.test(email)) {
+          document.getElementById('emailError').textContent = 'Please enter a valid email address.';
+          isValid = false;
+      } else {
+          document.getElementById('emailError').textContent = '';
+      }
+
+      // Password validation
+      const password = document.getElementById('password').value;
+      if (password.length < 6) {
+          document.getElementById('passwordError').textContent = 'Password must be at least 6 characters long.';
+          isValid = false;
+      } else {
+          document.getElementById('passwordError').textContent = '';
+      }
+
+      // Prevent form submission if validation fails
+      if (!isValid) {
+          event.preventDefault();
+      }
+  });
+</script>
+</body>
+</html>

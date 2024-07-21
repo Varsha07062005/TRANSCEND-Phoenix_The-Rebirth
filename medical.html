@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medical Support</title>
+    <style>
+        * {
+    padding: 0;
+    margin: 0;
+    font-family: monospace;
+    }
+    body{
+        background-color: #94cbe8;
+    }
+ul {
+    list-style: none;
+    background: #22438c;
+}
+ul li {
+    display: inline-block;
+    position: relative;
+}
+ul li a {
+   
+    display: block;
+    padding: 20px 25px;
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+    font-size: 20px;
+   
+}
+ul li ul .dropdown li {
+    display: block;
+}
+ul li ul.dropdown {
+    width: 100%;
+    background: #22438c;
+    position: absolute;
+    z-index: 999;
+    display: none;
+}
+ul li a:hover {
+    
+    background: #112c66;
+}
+ul li:hover ul.dropdown {
+    display: block;
+}
+#logo {
+ width:70px;
+ display: block;
+ padding: 10px 15px 10px 20px;
+ text-decoration: none;
+    align-items: center;
+    font-size: 20px;
+}
+
+        #medical-support {
+            width: 90%;
+            max-width: 600px;
+            padding: 20px;
+            background-color: #ffffff;
+            border: 1px solid #e0e0e0;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        .a{
+            align-items:center;
+            padding-left:30px;
+        }
+        h1 {
+            color: #ff6600;
+            margin-bottom: 20px;
+        }
+
+        .container {
+            background-color: #f0f8ff;
+            padding: 20px;
+            padding-left:30px;
+            align-items:center;
+            margin: 20px 0;
+            border-radius: 10px;
+            border: 1px solid #c0c0c0;
+            text-align: left;
+        }
+
+        hr {
+            border: 0;
+            height: 1px;
+            background: #ccc;
+            margin: 40px 0;
+        }
+
+        h2 {
+            color: #333333;
+            margin-bottom: 10px;
+        }
+
+        form {
+            display: flex;
+            flex-direction:column;
+            padding-left: 30px;
+        }
+
+        label {
+            margin-top: 10px;
+            font-weight: bold;
+            padding-left: 30px;
+        }
+
+        input[type="text"],
+        input[type="number"],
+        select {
+            margin-top: 5px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+
+        }
+
+        button {
+            margin-top: 20px;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            background-color: #007bff;
+            color: #ffffff;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+        .win {
+            background-color: #333;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+        .win a {
+            color: #ff7f50;
+            text-decoration: none;
+        }
+        .win a:hover {
+            text-decoration: underline;
+        }
+        .win .container {
+            display: flex;
+            justify-content: space-between;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding-left:30px;
+        }
+        .win .container div {
+            flex: 1;
+            margin: 0 10px;
+        }
+        .win h3 {
+            border-bottom: 2px solid #ff7f50;
+            padding-bottom: 10px;
+            margin-bottom: 10px;
+        }
+        .win ul {
+            list-style: none;
+            padding: 0;
+        }
+        .win ul li {
+            margin-bottom: 10px;
+        }
+        .win ul li a {
+            color: #fff;
+        }
+        .win .social-media a {
+            display: inline-block;
+            margin-right: 10px;
+        }
+        .win .social-media a img {
+            width: 30px;
+            height: 30px;
+        }
+        .win .subscribe button {
+            background-color: #555;
+            border: none;
+            color: #fff;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+        .win .subscribe button:hover {
+            background-color: #ff7f50;
+        }
+        .win .copyright {
+            margin-top: 20px;
+            border-top: 1px solid #444;
+            padding-top: 10px;
+            font-size: 14px;
+        }
+       
+    </style>
+</head>
+<body>
+    <ul>
+        <li><img src="Screenshot 2024-07-18 150236.png" alt text="Logo" id="logo"></li>
+     
+         <li>
+             <a href="aboutus.html">About Us</a> 
+         </li>
+         <li>
+             <a href="#">Get Involved</a>
+             <ul class="dropdown">
+                 <li><a href="C:\Users\varsh\OneDrive\Desktop\rise\emotional.html">Support</a></li>
+                 <li><a href="donate.html">Donate</a></li>
+             </ul>
+         </li>
+         <li><a href="home.html">Home</a></li>
+         <li>
+             <a href="#">News And Events</a>
+             <ul class="dropdown">
+                 <li><a href="special.html">Special Dates</a></li>
+                 <li><a href="govt.html">Government Schemes</a></li>
+                 <li><a href="medical.html">Medical Support</a></li>
+             </ul>
+         </li>
+         <li>
+             <a href="contact.html">Contact</a>
+         </li> 
+         <li>
+            <a href="login.html" id="login">Login</a>
+        </li>
+    
+        </ul>
+    
+    <section id="medical-support">
+        <h1>Discount by 30%</h1>
+        <div class="a">
+        <div class="container">
+            <h2>Book Your Day</h2>
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="age">Age:</label>
+                <input type="number" id="age" name="age" required>
+                
+                <label for="issues">Issues:</label>
+                <input type="text" id="issues" name="issues" required>
+                
+                <label for="reason">Reason:</label>
+                <input type="text" id="reason" name="reason" required>
+                
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+        </div>
+
+        <hr>
+        <div class="b">
+        <div class="container">
+            <h2>Mental Wellbeing</h2>
+            <form>
+                <label for="name-mental">Name:</label>
+                <input type="text" id="name-mental" name="name-mental" required>
+                
+                <label for="mental-state">Mental State:</label>
+                <select id="mental-state" name="mental-state" required>
+                    <option value="depressed">Depressed</option>
+                    <option value="anxious">Anxious</option>
+                    <option value="stressed">Stressed</option>
+                    <option value="need-someone-to-talk">Need someone to talk</option>
+                    <option value="motivation">Motivation</option>
+                </select>
+                
+                <label for="age-mental">Age:</label>
+                <input type="number" id="age-mental" name="age-mental" required>
+                
+                <label for="reason-mental">Reason:</label>
+                <input type="text" id="reason-mental" name="reason-mental" required>
+                
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+        </div>
+    </section>
+    <footer class="win">
+        <div class="container">
+            <div class="follow-us">
+                <h3>Follow Us</h3>
+                <p>Follow us on social media and stay connected!</p>
+                <div class="social-media">
+                    <a href="https://www.facebook.com/index.php/"><img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt="Facebook"></a>
+                    <a href="https://www.instagram.com/"><img src="https://cdn-icons-png.flaticon.com/512/733/733558.png" alt="Instagram"></a>
+                    <a href="https://www.linkedin.com/homea"><img src="https://cdn-icons-png.flaticon.com/512/733/733561.png" alt="LinkedIn"></a>
+                </div>
+            </div>
+            <div class="important-links">
+                <h3>Important Links</h3>
+                <ul>
+                    <li><a href="aboutus.html">About Us</a></li>
+                    <li><a href="contact.html">What We Do</a></li>
+                    <li><a href="emotional.html">Our Impact</a></li>
+                    <li><a href="donate.html">Ways to Give</a></li>
+                    <li><a href="special.html">Volunteer</a></li>
+                </ul>
+            </div>
+            <div class="contact-us">
+                <h3>Contact Us</h3>
+                <p>Coco Park Street<br>India, 29776</p>
+                <p>625192</p>
+                <p><a href="Phoenix_Rebirth@example.com">Email Us</a></p>
+            </div>
+            <div class="subscribe">
+                <h3>Subscribe</h3>
+                <p>Click to subscribe to our newsletter.</p>
+                <button>SUBSCRIBE</button>
+            </div>
+        </div>
+        <div class="copyright">
+            &copy; All Rights Reserved
+        </div>
+    </footer>
+</body>
+</html>

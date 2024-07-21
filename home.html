@@ -1,0 +1,630 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="eng">
+    <meta name="viewport"
+    content="width=device-width, intial-scale=1.0">
+     <title> Phoneix:The Rebirth </title>
+ <style>
+* {
+    padding: 0;
+    margin: 0;
+    font-family: monospace;
+    }
+    body{
+        background-color: #94cbe8;
+    }
+ul {
+    list-style: none;
+    background: #22438c;
+}
+ul li {
+    display: inline-block;
+    position: relative;
+}
+ul li a {
+   
+    display: block;
+    padding: 20px 25px;
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+    font-size: 20px;
+   
+}
+ul li ul .dropdown li {
+    display: block;
+}
+ul li ul.dropdown {
+    width: 100%;
+    background: #22438c;
+    position: absolute;
+    z-index: 999;
+    display: none;
+}
+ul li a:hover {
+    background: #112c66;
+}
+ul li:hover ul.dropdown {
+    display: block;
+}
+#logo {
+ width:70px;
+ display: block;
+ padding: 10px 15px 10px 20px;
+ text-decoration: none;
+    align-items: center;
+    font-size: 20px;
+}
+a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+       
+
+        .menu li {
+            position: relative;
+        }
+
+        .menu li a {
+            display: block;
+            padding: 14px 20px;
+            color: rgb(255, 255, 255);
+        }
+
+        .menu li:hover > a {
+            background-color: #575757;
+        }
+
+        
+
+        .menu li:hover .dropdown {
+            display: block;
+        }
+
+        .dropdown li a {
+            padding: 10px 20px;
+        }
+
+        .dropdown li a:hover {
+            background-color: #e9a7c9;
+        }
+
+        .login-button {
+            background-color: #e9a7c9;
+            color: white;
+            border-radius: 5px;
+        }
+
+        .login-button:hover {
+            background-color: #e9a7c9;
+        }
+
+        /* Container Styles */
+        .container {
+            width: 100%;
+            max-width: 1200px; /* Ensure the containers do not exceed a maximum width */
+            margin: 40px auto; /* Add top and bottom margins */
+            padding: 20px;
+            background-color: #e9a7c9;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            min-height: 400px; /* Set minimum height */
+        }
+
+        /* Container Content */
+        .content {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        /* Image Styles */
+        .image {
+            width: 300px; /* Fixed width */
+            height: 300px; /* Fixed height */
+            margin-right: 20px; /* Add space to the right of the image */
+        }
+
+        .image img {
+            width: 100%;
+            height: 100%; /* Ensure the image fills its container */
+            object-fit: cover; /* Maintain aspect ratio and cover the container */
+            border-radius: 8px;
+        }
+
+        /* Text Styles */
+        .text {
+            max-width: 75%;
+        }
+
+        /* Button Styles */
+        .learn-more {
+            padding: 10px 20px;
+            background-color: #151416; /* Blue color */
+            color: rgb(237, 239, 245);
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1em;
+            margin-top: 20px; /* Add space above the button */
+        }
+
+        .learn-more:hover {
+            background-color: #4caf50;
+        }
+
+        /* First Container Specific Styles */
+        .first-container .content {
+            flex-direction: row;
+        }
+
+        .first-container .image {
+            order: 0;
+        }
+
+        .first-container .text {
+            order: 1;
+        }
+
+        /* Second Container Specific Styles */
+        .second-container .content {
+            flex-direction: row-reverse; /* Swap the order for the second container */
+        }
+
+        .second-container .image {
+            order: 1;
+        }
+
+        .second-container .text {
+            order: 0;
+        }
+
+        /* Row Container Styles */
+        .row-container {
+            display: flex;
+            justify-content: space-between;
+            margin: 40px 0;
+        }
+
+        .small-container {
+            width: 30%;
+            background-color: #e9a7d7ea;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            text-align: center;
+        }
+
+        .small-image {
+            width: 100%;
+            padding: bottom 75%;   background-size: cover;
+            background-position: center;
+            border-radius: 8px;
+        }
+
+        .buttons {
+            margin-top: 10px;
+        }
+
+        .buttons button {
+            padding: 10px 20px;
+            background-color: #050505;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1em;
+            margin: 5px;
+        }
+
+        .buttons button:hover {
+            background-color: #4caf50;
+        }
+
+        /* FAQ Section Styles */
+        .faq-section {
+            margin-top: 40px;
+        }
+
+        .faq-container {
+            margin-bottom: 10px;
+        }
+        .faq-question {
+            width: 100%;
+            padding: 10px;
+            background-color: #393c39; /* Blue color for questions */
+            color: white;
+            border: none;
+            border-radius: 5px;
+            text-align: left;
+            cursor: pointer;
+            font-size: 1.2em;
+            transition: background-color 0.3s;
+        }
+
+        .faq-question:hover {
+            background-color: #4caf50; /* Darker blue on hover */
+        }
+
+        .faq-answer {
+            display: none;
+            padding: 10px;
+            background-color: #f5f5f5;
+            border-radius: 5px;
+            margin-top: 5px;
+        }
+
+        .dropdown-item {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            margin-top: 5px;
+            cursor: pointer;
+            text-align: left;
+        }
+
+.dropdown-item:hover {
+    background-color: #f0f0f0;
+}
+
+/* Join Us Section Styles */
+.join-us-container {
+    background-color: #e9a7c9;
+    text-align: center;
+    padding: 10px; /* Adjusted padding */
+    border-radius: 8px;
+    max-width: 2000px; /* Increased width */
+    max-height: 150px; /* Increased maximum height */
+    overflow: hidden; /* Hide overflow if content exceeds max height */
+    margin: 20px auto; /* Center the container and add some spacing */
+    display: flex; /* Enable flexbox */
+    flex-direction: column; /* Stack items vertically */
+    justify-content: center; /* Center content vertically */
+    align-items: center; /* Center content horizontally */
+}
+
+.join-us-container h2 {
+    margin-bottom: 10px; /* Increased margin */
+    font-size: 1em; /* Slightly increased font size */
+}
+
+.support-button,
+.donate-button {
+    padding: 8px 16px; /* Increased padding */
+    background-color: #28c22d;
+    color: white;
+    border: none;
+    border-radius: 5px;
+            cursor: pointer;
+            font-size: 0.9em; /* Increased font size */
+            margin: 5px; /* Increased margin */
+        }
+
+        .support-button:hover,
+        .donate-button:hover {
+            background-color: #4caf50;
+        }
+
+        /* Additional Styles for Contact Button */
+        .contact-button-container {
+            text-align: center;
+            margin: 40px 0;
+        }
+
+        .contact-button {
+            padding: 15px 30px;
+            background-color: #007BFF; /* Blue color */
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1.2em;
+        }
+
+        .contact-button:hover {
+            background-color: #0056b3;
+        }
+        .rise {
+            display: flex;
+            overflow-x: auto;
+            white-space: nowrap;
+            width: 100%;
+            padding-left: 30px;
+        }
+
+        .item {
+            flex: 0 0 auto;
+            width: 150px; /* Adjust width as needed */
+            height: 150px; /* Adjust height as needed */
+            margin-right: 10px; /* Space between items */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #ddd; /* Fallback color */
+        }
+
+        .item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .win {
+            background-color: #333;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+        .win a {
+            color: #ff7f50;
+            text-decoration: none;
+        }
+        .win a:hover {
+            text-decoration: underline;
+        }
+        .win .container {
+            display: flex;
+            justify-content: space-between;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        .win .container div {
+            flex: 1;
+            margin: 0 10px;
+        }
+        .win h3 {
+            border-bottom: 2px solid #ff7f50;
+            padding-bottom: 10px;
+            margin-bottom: 10px;
+        }
+        .win ul {
+            list-style: none;
+            padding: 0;
+        }
+        .win ul li {
+            margin-bottom: 10px;
+        }
+        .win ul li a {
+            color: #fff;
+        }
+        .win .social-media a {
+            display: inline-block;
+            margin-right: 10px;
+        }
+        .win .social-media a img {
+            width: 30px;
+            height: 30px;
+        }
+        .win .subscribe button {
+            background-color: #555;
+            border: none;
+            color: #fff;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+        .win .subscribe button:hover {
+            background-color: #ff7f50;
+        }
+        .win .copyright {
+            margin-top: 20px;
+            border-top: 1px solid #444;
+            padding-top: 10px;
+            font-size: 14px;
+        }
+ </style>   
+</head>
+<body>
+    <ul>
+   <li><img src="Screenshot 2024-07-18 150236.png" alt text="Logo" id="logo"></li>
+
+    <li>
+        <a href="aboutus.html">About Us</a> 
+    </li>
+    <li>
+        <a href="#">Get Involved</a>
+        <ul class="dropdown">
+            <li><a href="emotional.html">Support</a></li>
+            <li><a href="donate.html">Donate</a></li>
+        </ul>
+    </li>
+    <li><a href="home.html">Home</a></li>
+    <li>
+        <a href="#">News And Events</a>
+        <ul class="dropdown">
+            <li><a href="special.html">Special Dates</a></li>
+            <li><a href="govt.html">Government Schemes</a></li>
+            <li><a href="medical.html">Medical Support</a></li>
+        </ul>
+    </li>
+    <li>
+        <a href="contact.html">Contact</a>
+    </li> 
+    <li>
+        <a href="login.html" id="login">Login</a>
+    </li>
+
+    </ul>
+   
+    <div class="rise">
+        <div class="item">
+            <img src="sathyasri sharmila.jpeg" alt="sathyasri">
+        </div>
+        <div class="item"> <img src="rose.webp" alt="sathyasri"></div>
+        <div class="item"> <img src="aishwarya-rutuparna-pradhan-1.avif" alt="aishwarya-rutuparna-pradhan-1"></div>
+        <div class="item"> <img src="Kalki--Subramaniam.jpg" alt="Kalki--Subramaniam"></div>
+        <div class="item"> <img src="manabi.webp" alt="manabi"></div>
+        <div class="item"> <img src="noori salem.jpeg" alt="noori"></div>
+        <div class="item"> <img src="thanuja.avif" alt="thanuja"></div>
+        <div class="item"> <img src="police.jpeg" alt="police trabns"></div>
+        <div class="item"> <img src="tv.jpeg" alt="sathyasri"></div>
+    </div>
+   <!-- First Container -->
+    <div class="container first-container">
+        <div class="content">
+            <div class="image">
+                <img src="Screenshot 2024-07-18 150236.png" alt="logo">
+            </div>
+            <div class="text">
+                <h1>Phoenix: The Rebirth</h1>
+                <p>
+                  <c>  Just as a phoenix rises from its own ashes in the ultimate act of rebirth, don't settle for small things. Embrace the rebirth and rise even stronger, more powerful, and higher. First, accept yourself as you are and believe in yourself. <br>If not you, then who? If not now, then when?.</p>
+                  </c> <button class="learn-more">
+                    <a href="aboutus.html">Learn more</a></button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Second Container -->
+    <div class="container second-container">
+        <div class="content">
+            <div class="text">
+                <h1>Transgender Support & Empowerment</h1>
+<p><c>The mind of a transgender person is incredibly strong and resilient. They face many challenges in a world that often doesn't understand them, which helps them develop a deep sense of self-awareness and bravery. Their journey requires great mental strength as they challenge societal norms and overcome obstacles. This experience also makes them highly empathetic, creative, and adaptable. Their powerful minds show their individual strength and inspire others, proving the amazing potential of the human spirit and identity.</c></p>      
+          <button class="learn-more">
+            <a href="emotional.html">Learn more</a></button>
+            </div>
+            <div class="image">
+                <img src="heart.png" alt="support">
+            </div>
+        </div>
+        
+    </div>
+
+    <!-- Row Container with Three Sections -->
+    <div class="row-container">
+        <div class="small-container">
+            <div class="small-image" style="background-image: url('front.jpg');"></div>
+            <div class="buttons">
+                <button>
+                    < <a href="oppu.html">UPGRADE SKILLS</a>UPGRADE SKILLS</button>
+            </div>
+        </div>
+        <div class="small-container">
+            <div class="small-image" style="background-image: url('wfh.png');"></div>
+            <div class="buttons">
+                <button>
+                    < <a href="oppu.html">WORK FROM HOME</a></button>
+            </div>
+        </div>
+        <div class="small-container">
+            <div class="small-image" style="background-image: url('front.jpg');"></div>
+            <div class="buttons">
+                <button>
+                    <a href="oppu.html">BECOME ENTERPRUENER</a></button>
+            </div>
+        </div>
+    </div>
+
+    <!-- FAQ Section -->
+    <div class="faq-section">
+        <div class="faq-container">
+            <button class="faq-question">WHATS YOUR ULTIMATE GOAL?</button>
+            <div class="faq-answer">
+                <div class="dropdown-item">We aim to provide quality education, enhance skills, and help individuals secure real-life jobs on work-from-home online platforms. Additionally, we will conduct online competitions with cash prizes to further support and incentivize their growth.</div>
+            </div>
+        </div>
+        <div class="faq-container">
+            <button class="faq-question">IS YOUR WEBSITE MONEY MOTIVE?</button>
+            <div class="faq-answer">
+                <div class="dropdown-item">No, it’s entirely driven by social motives. Our goal is to equate TRANSGENDERS with TRANSCENDS.</div>
+            </div>
+        </div>
+        <div class="faq-container">
+            <button class="faq-question">WHAT ARE TRANS NEEDS?</button>
+            <div class="faq-answer">
+                <div class="dropdown-item">1. Recognition  
+                    2. Acceptance  
+                    3. Encouragement</div>
+            </div>
+        </div>
+        <div class="faq-container">
+            <button class="faq-question">HOW DO YOU SUPPORT THEM?</button>
+            <div class="faq-answer">
+                <div class="dropdown-item">Providing emotional and practical support helps individuals feel valued and empowered to reach their potential.</div>
+            </div>
+        </div>
+        <div class="faq-container">
+            <button class="faq-question">HOW IS IT INCLUSIVE?</button>
+            <div class="faq-answer">
+                <div class="dropdown-item">Fostering an inclusive environment ensures that everyone has equal opportunities and feels a sense of belonging.</div>
+               
+            </div>
+        </div>
+    </div>
+
+    <!-- Join Us Section -->
+    <div class="join-us-container">
+        <h2>Join us in creating hope and opportunity for the 1000+ transgender community</h2>
+        <div class="buttons">
+            <button class="support-button">
+                <a href="emotional.html">Emotional Support</a></button>
+            <button class="donate-button">
+                <a href="donate.html">Donate</a>
+            </button>
+        </div>
+    </div>
+
+    <!-- Contact Button -->
+    <div class="contact-button-container">
+        <a href="contact.html">
+            <button class="contact-button">Contact Us</button>
+        </a>
+    </div>
+    <footer class="win">
+        <div class="container">
+            <div class="follow-us">
+                <h3>Follow Us</h3>
+                <p>Follow us on social media and stay connected!</p>
+                <div class="social-media">
+                    <a href="https://www.facebook.com/index.php/"><img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt="Facebook"></a>
+                    <a href="https://www.instagram.com/"><img src="https://cdn-icons-png.flaticon.com/512/733/733558.png" alt="Instagram"></a>
+                    <a href="https://www.linkedin.com/homea"><img src="https://cdn-icons-png.flaticon.com/512/733/733561.png" alt="LinkedIn"></a>
+                </div>
+            </div>
+            <div class="important-links">
+                <h3>Important Links</h3>
+                <ul>
+                    <li><a href="aboutus.html">About Us</a></li>
+                    <li><a href="contact.html">What We Do</a></li>
+                    <li><a href="emotional.html">Our Impact</a></li>
+                    <li><a href="donate.html">Ways to Give</a></li>
+                    <li><a href="special.html">Volunteer</a></li>
+                </ul>
+            </div>
+            <div class="contact-us">
+                <h3>Contact Us</h3>
+                <p>Coco Park Street<br>India, 29776</p>
+                <p>625192</p>
+                <p><a href="Phoenix_Rebirth@example.com">Email Us</a></p>
+            </div>
+            <div class="subscribe">
+                <h3>Subscribe</h3>
+                <p>Click to subscribe to our newsletter.</p>
+                <button>SUBSCRIBE</button>
+            </div>
+        </div>
+        <div class="copyright">
+            &copy; All Rights Reserved
+        </div>
+    </footer>
+   <!-- JavaScript to Handle Dropdowns -->
+   <script>
+    document.querySelectorAll('.faq-question').forEach(question => {
+        question.addEventListener('click', () => {
+            const answer = question.nextElementSibling;
+            if (answer.style.display === 'block') {
+                answer.style.display = 'none';
+            } else {
+                answer.style.display = 'block';
+            }
+        });
+    });
+</script>
+
+</body>
+</html>
